@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/login2.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="./js/login.js" defer></script>
+  <title>Login</title>
+</head>
+<body>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <div class="fadeIn first">
+        <img src="images/userlogo.svg" id="icon" alt="User Icon" />
+      </div>
+      <form>
+        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login"></input>
+        <input type="password" id="password" class="fadeIn third" name="login" autocomplete="true" placeholder="password"></input>
+        <input type="submit" id="login-submit" class="fadeIn fourth" value="Log In"></input>
+      </form>
+
+      <div id="formFooter">
+        <a class="underlineHover" href="#" id="recuperarPassword">
+          Olvidaste la contraseña?
+        </a>
+      </div>
+    </div>
+    <div class="px-4 pt-5">
+      <hr>
+      </hr>
+    </div>
+    <div class="pt-2">
+      <div class="row justify-content-center">
+        <h5 class="p-3 mb-2 bg-secondary text-white">
+          Aun no tienes una cuenta
+          <span>
+            <a href="./register.html" class="text-danger">
+              Registrate Ahora!
+            </a>
+          </span>
+        </h5>
+      </div>
+      <div class="row justify-content-center align-items-center pt-4 pb-5">
+        <div class="col-8">
+          <a href="./register.html" class="btn btn-block btn-info">
+            Registrar
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="./index.html" class="btn btn-block btn-info">
+            inicio
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="ErrorLigin" tabindex="-1" role="dialog" aria-labelledby="ErrorLiginLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ErrorLiginLabel">Error</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          tipo de error
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 2 -->
+  <div class="modal fade" id="modelRecuperacion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Recuperacion Contrase</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="email-recuperacion">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="send-recuperacion">Confirmar </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</html>

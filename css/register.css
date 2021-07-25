@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://www.cocinayvino.com/wp-content/uploads/2017/01/comidarapida.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.maxwitch{
+  max-width: 400px;
+}
+
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}

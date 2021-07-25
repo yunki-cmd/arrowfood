@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>ArrowFood</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- owl css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- awesome fontfamily -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/cards.css">
+</head>
+<!-- body -->
+
+<body class="main-layout">
+
+     <div class="sidebar">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+
+                <div id="dismiss">
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+
+                <ul class="list-unstyled components">
+
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">¿Dónde estamos?</a>
+                    </li>
+                    <li>
+                        <a href="recipe.html">Recetas</a>
+                    </li>
+                    <li>
+                        <a href="#" id="reserva">Reserva</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contactanos</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+    <div id="content">
+    <!-- header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="full">
+                        <a href="index.html"><img src="images/logo.png" alt="#" class="logo1"/></a>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="full">
+                        <div class="right_header_info">
+                            <ul>
+                                <li class="dinone">Contactanos: <img style="margin-right: 15px;margin-left: 15px;"
+                                        src="images/phone_icon.png" alt="#"><a>601-450-891</a></li>
+                                <li class="dinone"><img style="margin-right: 15px;" src="images/mail_icon.png"
+                                        alt="#"><a href="contact.html">ArrowFood.com</a></li>
+                                <li class="dinone"><img
+                                        style="margin-right: 15px;height: 21px;position: relative;top: -2px;"
+                                        src="images/location_icon.png" alt="#"><a href="about.html">Calle Tolosa, 2, 4, 28041 Madrid</a></li>
+                                
+                                <li class="button_user" id="ocultar">
+                                    <a class="button active" href="./login.html">Login</a>
+                                    <a class="button" href="./register.html">Registrate</a>
+                                </li>
+                               
+                                <div id="mostrar" style="display: none;">
+                                    <li class="dinone">
+                                       <a><img src="./images/logeado.png" alt="User" style="margin-top: -12px; margin-right: 25px;"></a>
+                                       <a id="textoUsername"></a>
+                                    </li>
+                                </div>
+                                <li>
+                                    <button type="button" id="sidebarCollapse">
+                                        <img src="images/menu_icon.png" alt="#">
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+     
+    <!-- start slider section -->
+    <div class="slider_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div id="main_slider" class="carousel vert slide" data-ride="carousel" data-interval="5000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="slider_cont">
+                                                <h3>Descubre<br>uno de los mejores restaurantes cerca de ti</h3>
+                                                <p>Es un local establecido desde hace un tiempo como uno de los mejores restaurantes que visitar tanto si estas de vacaciones como si vives por el area.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="slider_image full text_align_center">
+                                                <img class="img-responsive" src="images/pl1.png" alt="#" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="slider_cont">
+                                                <h3>Todo<br>tipo de recetas y platos</h3>
+                                                <p>comida extrabajante y unica de todos los lugares del mundo preparada por los mejores cocineros de España.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 full text_align_center">
+                                            <div class="slider_image">
+                                                <img class="img-responsive" src="images/pl5.png" alt="#" />
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="slider_cont">
+                                                <h3>Comida excelente<br>con el mejor trato por parte del personal</h3>
+                                                <p>Aquí te encontraras con el mejor trato posilbe hacia nuestros clientes así como unas instalacciones idoneas para todo tipo de ambiente</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 full text_align_center">
+                                            <div class="slider_image">
+                                                <img class="img-responsive" src="images/pl2.png" alt="#" />
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="slider_cont">
+                                                <h3>Ofrecemos <br>los mejores productos</h3>
+                                                <p>En nuestro restaurante siempre encontraras ingredientes de la mejor calida y de la epoca, siempre contando con prodcutos frescos.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 full text_align_center">
+                                            <div class="slider_image">
+                                                <img class="img-responsive" src="images/pl4.png" alt="#" />
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="slider_cont">
+                                                <h3>Discover Restaurants<br>That deliver near You</h3>
+                                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 full text_align_center">
+                                            <div class="slider_image">
+                                                <img class="img-responsive" src="images/pl3.png" alt="#" />
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                                <i class="fa fa-angle-up"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                                <i class="fa fa-angle-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end slider section -->
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+    <!-- section -->
+    <section class="resip_section">
+        <div class="container">
+            <div class="row">
+         <div class="col-md-12">
+       <div class="ourheading">
+    <h2>Nuestras Recetas</h2>
+  </div>
+</div>    
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs1.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Hecho en casa</h3>
+                        <h4><span class="theme_color">$</span>10</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs2.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Fideos Chinos</h3>
+                        <h4><span class="theme_color">$</span>20</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs3.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Heuvos a la gruyere</h3>
+                        <h4><span class="theme_color">$</span>10</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs4.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Sushi Dizzy</h3>
+                        <h4><span class="theme_color">$</span>20</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs1.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Hecho en casa</h3>
+                        <h4><span class="theme_color">$</span>10</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs2.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Fideos Chinos</h3>
+                        <h4><span class="theme_color">$</span>20</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs3.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Heuvos a la gruyere</h3>
+                        <h4><span class="theme_color">$</span>10</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs4.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>Sushi Dizzy</h3>
+                        <h4><span class="theme_color">$</span>20</h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="product_blog_img">
+                        <img src="images/rs5.png" alt="#" />
+                    </div>
+                    <div class="product_blog_cont">
+                        <h3>croissant de chocolate</h3>
+                        <h4><span class="theme_color">$</span>10</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<div class="bg_bg">
+<!-- about -->
+<div class="about">
+    <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+             <div class="title">
+                <i><img src="images/title.png" alt="#"/></i>
+                <h2>Sobre Nosotroso y Nuestro Restaurante</h2>
+                <span>Siempre con la mejor Calidad y Atencion
+                   <br>Hacia nuestros clientes 
+                </span>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+             <div class="about_box">
+                 <h3>La mejor Comida</h3>
+                 <p>Un calidad y relajante, dirigido por propietarios galardonados, en la hermosa ciudad de Madrid, a poca distancia en coche de la M30 y de los cruces 13 y 14 de la M4. El edificio y la decoración son encantadores y rústicos, con elegantes toques modernos. Relájese junto a la estufa, ideal para las noches de invierno, o disfrute de una terraza exterior con vistas a los campos o en un bonito patio lleno de flores en los meses de verano. El menú diario, con todo recién preparado en la cocina del bar, incluye pescado fresco, tartas, bistecs y especialidades diarias del chef con precios que van de 11,50 £ a 19,50 £. Como todos los platos se preparan en la cocina del bar, pueden atender a la mayoría de las necesidades de nuestros clientes</p>
+                 <a href="#">Seguir Leyendo <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+             </div>
+         </div>
+          <div class="col-xl-5 col-lg-5 col-md-10 col-sm-12 about_img_boxpdnt">
+             <div class="about_img">
+                 <figure><img src="images/about-img.jpg" alt="#/"></figure>
+             </div>
+         </div>      
+       </div> 
+    </div>
+</div>
+<!-- end about -->
+
+<!-- blog -->
+<div class="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <i><img src="images/title.png" alt="#"/></i>
+          <h2>Nuestras Recetas</h2>
+          <span>Aquí podéis echar un pequeño vistazo a algunos de nuestros platos</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
+        <div class="blog_box">
+          <div class="blog_img_box">
+            <figure><img src="images/Spicy Burger.jpg" alt="#"/>
+             <span>02 JUN 2021</span>
+            </figure>
+          </div>
+          <h3>Spicy Burger</h3>
+          <p>El sabor carnoso y carbonizado de la hamburguesa, sazonado simplemente con sal y pimienta (siempre sazone la carne después de formar la hamburguesa) El sabor rico y cremoso del queso. La dulzura de los arros de cebolla solo aquí</p>
+        </div>
+      </div>
+       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
+        <div class="blog_box">
+          <div class="blog_img_box">
+            <figure><img src="images/Tostada Filipina.jpg" alt="#"/>
+            <span>02 JUN 2021</span>
+            </figure>
+          </div>
+          <h3>Tostada Filipina</h3>
+          <p>Es una tostada que tiene un huevo cocido suave en el centro rodeado de una fina capa de aguacate huntaso.Este desayuno popular tiene muchos nombres,como Toad in a Hole, ¡pero esta receta de huevo en tostadas es deliciosa sin importar cómo se llame!</p>
+        </div>
+      </div>
+       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+        <div class="blog_box">
+          <div class="blog_img_box">
+            <figure><img src="images/Pizza.jpg" alt="#"/>
+            <span>02 JUN 2021</span>
+            </figure>
+          </div>
+          <h3>Pizza</h3>
+          <p>Plato de origen italiano consiste en un disco aplanado de masa de pan cubierto con una combinación de aceite de oliva,tomate, aceitunas, mozzarella y que se cubre con salsa de tomate y queso y se hornea a alta temperatura en un horno</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end blog -->
+
+<!-- Our Client -->
+<div class="Client">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <i><img src="images/title.png" alt="#"/></i>
+          <h2>Nuestros Clientes</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-2">
+        <!--   <div class="card card-block mb-2">
+            <h4 class="card-title">Card 1</h4>
+            <p class="card-text">Welcom to bootstrap card styles</p>
+            <a href="#" class="btn btn-primary">Submit</a>
+          </div>   -->
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+            <img src="images/client.jpg" alt="Photo of sunset">
+                <h5 class="card-title mt-3 mb-3 pl-2">Liú Wáng</h5>
+                <p class="card-text pl-1">Muy buena experiencia en el restaurante.
+                    Contentos con la experiencia repetiremos seguro.</p> 
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+            <img src="images/cliente2.jpg" alt="Photo of sunset">
+                <h5 class="card-title  mt-3 mb-3 pl-2">Ignacio Ferrero</h5>
+                <p class="card-text pl-1">Un sitio donde calidad precio tiene un equilibrio perfecto
+                    Sitio con una decoración muy bonita.</p> 
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+            <img src="images/cliente3.jpeg" alt="Photo of sunset">
+                <h5 class="card-title  mt-3 mb-3 pl-2">María Martinez</h5>
+                <p class="card-text pl-1">Recomiendo el entrecot de ternera sin lugar a dudas, las croquetas de cerdo que se deshace en la boca.</p> 
+          </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="card card-block">
+            <img src="images/cliente4.jpg" alt="Photo of sunset">
+                <h5 class="card-title  mt-3 mb-3 pl-2">Valeria Jimenez</h5>
+                <p class="card-text pl-1">Hace un tiempo ya, fui con mi familia nuestra experiencia allí fue...¡EXTRAORDINARIA!</p> 
+          </div>
+            </div>    
+          </div>
+        </div>
+<!-- end Our Client -->
+</div>
+    <!-- footer -->
+    <fooetr>
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="lik">
+                            <li class="active"> <a href="index.html">Home</a></li>
+                            <li> <a href="about.html">¿Donde estamos?</a></li>
+                            <li> <a href="recipe.html">Recetas</a></li>
+                            <li>  <a href="" id="reserva"></li>
+                            <li> <a href="contact.html">Contactanos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="new">
+                            <h3>Ofertas</h3>
+                            <form class="newtetter">
+                                <input class="tetter" placeholder="correo" type="text" name="Youremail" >
+                                <button class="submit suscribir" type="button" onclick="suscribir()">Suscríbete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>© 2021 All Rights Reserved. Design by<a href="https://ArroFood.com"> ArrowFood Team</a></p>
+                </div>
+            </div>
+        </div>
+    </fooetr>
+    <!-- end footer -->
+
+    </div>
+    </div>
+    <div class="overlay"></div>
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    
+     <script src="js/jquery-3.0.0.min.js"></script>
+     <script src="js/Funciones.js"></script>
+    <style>
+    #owl-demo .item{
+        margin: 3px;
+    }
+    #owl-demo .item img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    </style>
+</body>
+
+</html>
